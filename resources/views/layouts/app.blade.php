@@ -26,6 +26,9 @@
             <li class="nav-item active">
                <a class="nav-link" href="/new-todos">Create todo</a>
             </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="/completed">Copleted todo</a>
+            </li>
 
       </div>
    </nav>

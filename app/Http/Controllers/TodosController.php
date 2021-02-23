@@ -11,9 +11,12 @@ class TodosController extends Controller
 {
     public function index()
     {
-        return view('todos.index')->with('todos', Todo::all());
+        return view('todos.index')->with('todos', Todo::all()->where('completed', '0'));
     }
-
+    public function completed()
+    {
+        return view('todos.completed')->with('todos', Todo::all()->where('completed', '1'));
+    }
     public function show(Todo $todo)
     {
         return view('todos.show')->with('todo', $todo);

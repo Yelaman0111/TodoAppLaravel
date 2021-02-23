@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-Todos List
+Completed Todos List
 @endsection
 
 @section('content')
@@ -23,10 +23,6 @@ Todos List
 
                         <div><a href="/todos/{{$todo->id}}" class="btn btn-primary btn-sm ">
                               View
-                           </a>
-
-                           <a href="/todos/{{$todo->id}}/complete" style="color:white" class="btn btn-warning btn-sm">
-                              Complete
                            </a>
 
 
